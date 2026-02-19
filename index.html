@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Senior High School Library</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#0b3c5d;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:20px;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(to right,#0b3c5d,#1e90ff);
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-top:10px;
+}
+
+/* SECTION */
+.section{
+    padding:50px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.section h2{
+    font-size:30px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* SERVICES GRID */
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+}
+
+.service-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.service-box h3{
+    margin-bottom:10px;
+    color:#0b3c5d;
+}
+
+/* FOOTER */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Senior High School Library</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h2>Welcome to Senior High School Library</h2>
+    <p>Providing academic resources and library services for Senior High School students and teachers.</p>
+    <p id="firebase-status" style="margin-top:15px;font-weight:bold;"></p>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2>About Our Library</h2>
+    <p>The Senior High School Library supports learning, research, and academic excellence by providing access to books, digital resources, and professional library services.</p>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+    <h2>Library Services Offered</h2>
+
+    <div class="services-grid">
+        <div class="service-box">
+            <h3>📚 Book Borrowing Service</h3>
+            <p>Students and teachers may borrow library books for academic and research purposes.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>💬 Online and Face-to-Face Queries & Assistance</h3>
+            <p>Library staff assist users with research questions and information needs.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>📖 Books and Articles Request / Book Digitization</h3>
+            <p>Request books and articles, and digitized copies for academic use.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>📩 Online Document Delivery</h3>
+            <p>Electronic delivery of requested academic documents and materials.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>🗄️ Access to Databases</h3>
+            <p>Access to academic and research databases for students and faculty.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>🔍 Related Literature Search</h3>
+            <p>Assistance in finding research literature and academic references.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>💻 Web OPAC (Online Public Access Catalog)</h3>
+            <p>Search books and library materials through the online catalog system.</p>
+        </div>
+    </div>
+
+    <p style="text-align:center;margin-top:20px;font-weight:bold;">
+        📍 Location: Senior High School Section – 5th Floor
+    </p>
+</section>
+
+<!-- AREAS / FACILITIES -->
+<section class="section" id="facilities">
+    <h2>Library Areas & Facilities</h2>
+
+    <div class="services-grid">
+        <div class="service-box">
+            <h3>🛄 Baggage Counter</h3>
+            <p>Secure your bags before entering the library for a comfortable visit.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>ℹ️ Information Desk / Borrowing & Returning Desk</h3>
+            <p>Assistance with inquiries, borrowing, and returning books efficiently.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>📖 Reading Area</h3>
+            <p>Quiet space for reading, studying, and research.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>📚 Stack Room</h3>
+            <p>Storage area for books and reference materials.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>🚻 Restroom</h3>
+            <p>Clean and accessible facilities for library visitors.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>🎓 Senior High School Collection</h3>
+            <p>Dedicated resources and books specifically for Senior High School students.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>💻 SmartLib Attendance System</h3>
+            <p>Monitor and record student library visits digitally for efficient tracking.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>🔒 RFID Security Gate</h3>
+            <p>Ensures the security of library materials with advanced RFID technology.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: library@school.edu<br>
+       Phone: 09XXXXXXXXX</p>
+</section>
+
+<footer>
+    <p>© 2026 Senior High School Library | All Rights Reserved</p>
+</footer>
+
+<!-- FIREBASE SDKS -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+
+<script>
+  // Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyD3LPwjvGe7Bh_TtEYWdVKNWQXDwdi3OE4",
+    authDomain: "senior-high-school-library.firebaseapp.com",
+    databaseURL: "https://senior-high-school-library-default-rtdb.firebaseio.com",
+    projectId: "senior-high-school-library",
+    storageBucket: "senior-high-school-library.firebasestorage.app",
+    messagingSenderId: "1016975585052",
+    appId: "1:1016975585052:web:c88d2370ed1b46fd54d4d9"
+  };
+
+  // Initialize Firebase
+  const app = firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
+
+  // Test writing data to Firebase Realtime Database
+  database.ref('status').set({
+    message: "Library website is live and connected to Firebase!"
+  })
+  .then(() => {
+    document.getElementById("firebase-status").innerText = "✅ Connected to Firebase";
+  })
+  .catch((error) => {
+    document.getElementById("firebase-status").innerText = "❌ Firebase connection error: " + error;
+  });
+</script>
+
+</body>
+</html>
